@@ -1,0 +1,548 @@
+﻿html,
+body {
+  font-family: Museo, serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f9ffbb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: #ffffff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  outline: 0 none;
+}
+.transBg {
+  background: rgba(0, 0, 0, 0.67);
+}
+#pageWrapper {
+  width: 1007px;
+  margin: 20px auto 40px;
+}
+#pageWrapper header {
+  margin: 39px auto 44px;
+}
+#pageWrapper header h1 a {
+  display: block;
+  width: 290px;
+  height: 105px;
+  margin: 0 auto;
+  text-indent: -9999em;
+  background: url(../media/FPU-logo.png) center center no-repeat;
+}
+#pageWrapper article h2 {
+  text-align: center;
+  color: #ebff0d;
+  font-weight: 700;
+  font-size: 67px;
+}
+#pageWrapper article h2 strong {
+  display: block;
+  background-color: #ebff0d;
+  color: #000;
+  padding: 7px 0;
+}
+#pageWrapper article h2 span {
+  display: block;
+  padding: 7px 0;
+}
+#pageWrapper article h3 {
+  clear: both;
+  text-align: center;
+  font-weight: 700;
+  font-size: 33px;
+  text-transform: uppercase;
+  max-width: 330px;
+  padding: 8px 20px;
+  margin: 158px auto 15px;
+}
+#pageWrapper article h3.yellow {
+  color: #ebff0d;
+}
+#pageWrapper article h3.orange {
+  color: #ff9c0d;
+}
+#pageWrapper article h3.purple {
+  color: #c600ff;
+}
+#pageWrapper article h3.teal {
+  color: #44fff6;
+}
+#pageWrapper article h3.green {
+  color: #a6ff11;
+}
+#pageWrapper article h3.white {
+  color: #ffffff;
+}
+#pageWrapper article .lnkBtn {
+  text-align: center;
+  border-left: 3px solid #fff;
+}
+#pageWrapper article .lnkBtn a {
+  display: block;
+  padding: 25px 0;
+  color: inherit;
+  font-size: 33px;
+  font-weight: 700;
+  text-decoration: none;
+  -moz-transition: ease-out 250ms;
+  -o-transition: ease-out 250ms;
+  -webkit-transition: ease-out 250ms;
+  transition: ease-out 250ms;
+}
+#pageWrapper article .lnkBtn.yellow {
+  border-color: #ebff0d;
+  color: #ebff0d;
+}
+#pageWrapper article .lnkBtn.yellow a:hover {
+  background: #ebff0d;
+}
+#pageWrapper article .lnkBtn.orange {
+  border-color: #ff9c0d;
+  color: #ff9c0d;
+}
+#pageWrapper article .lnkBtn.orange a:hover {
+  background: #ff9c0d;
+}
+#pageWrapper article .lnkBtn.purple {
+  border-color: #c600ff;
+  color: #c600ff;
+}
+#pageWrapper article .lnkBtn.purple a:hover {
+  background: #c600ff;
+}
+#pageWrapper article .lnkBtn.teal {
+  border-color: #44fff6;
+  color: #44fff6;
+}
+#pageWrapper article .lnkBtn.teal a:hover {
+  background: #44fff6;
+}
+#pageWrapper article .lnkBtn.green {
+  border-color: #a6ff11;
+  color: #a6ff11;
+}
+#pageWrapper article .lnkBtn.green a:hover {
+  background: #a6ff11;
+}
+#pageWrapper article .lnkBtn.white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+#pageWrapper article .lnkBtn.white a:hover {
+  background: #ffffff;
+}
+#pageWrapper article .lnkBtn a:hover {
+  -moz-transition: ease-in 400ms;
+  -o-transition: ease-in 400ms;
+  -webkit-transition: ease-in 400ms;
+  transition: ease-in 400ms;
+  color: #000;
+}
+#pageWrapper article .col1 li.middle {
+  width: 48.25%;
+  margin: 0 auto 20px;
+  float: none;
+}
+#pageWrapper article .col2::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#pageWrapper article .col2 li {
+  width: 48.25%;
+  margin-bottom: 20px;
+}
+#pageWrapper article .col2 li:nth-child(odd) {
+  float: left;
+  clear: left;
+}
+#pageWrapper article .col2 li:nth-child(even) {
+  float: right;
+}
+#pageWrapper article .col2 li.clear::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+#pageWrapper article .col2 li.middle {
+  width: 48.25%;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+#pageWrapper article .main li {
+  margin-top: 158px;
+}
+#pageWrapper article .main li.message a {
+  padding: 9px 0 8px 145px;
+  background: url(../media/play-btn.png) 70px center no-repeat;
+  text-align: left;
+}
+#pageWrapper article .main li.message a:hover {
+  background-image: url(../media/play-btn-ro.png);
+  background-position: 70px center;
+  background-repeat: no-repeat;
+}
+#pageWrapper article .main li.billing a,
+#pageWrapper article .main li.enrollment a {
+  font-size: 29px;
+}
+#pageWrapper article .dates li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+#pageWrapper article .dates li a {
+  padding: 15px 20px;
+  font-size: 28px;
+  font-weight: 500;
+  position: relative;
+}
+#pageWrapper article .dates li a span {
+  float: right;
+}
+#pageWrapper article .academics a {
+  font-size: 33px;
+  font-weight: 300;
+}
+#pageWrapper article .campusLifeDesc {
+  padding: 25px 85px 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+#pageWrapper article .campusLifeDesc h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+#pageWrapper article .campusLifeDesc p {
+  margin-bottom: 1em;
+  font-size: 18px;
+  line-height: 23px;
+}
+#pageWrapper article .campusLifeDesc p strong {
+  font-weight: 700;
+}
+#pageWrapper article .campusLife a {
+  font-size: 27px;
+  font-weight: 300;
+}
+#pageWrapper article .visitInfo {
+  margin-top: 158px;
+}
+#pageWrapper article .visitInfo a {
+  font-size: 33px;
+  font-weight: 300;
+}
+#pageWrapper article .career {
+  margin-top: 158px;
+}
+#pageWrapper article .career a {
+  font-size: 33px;
+  font-weight: 300;
+}
+#pageWrapper article .directories {
+  margin-bottom: 158px;
+}
+#pageWrapper article .directories a {
+  font-size: 33px;
+  font-weight: 300;
+}
+#pageWrapper article .checklist a {
+  padding: 25px 55px;
+  font-size: 25px;
+  font-weight: 500;
+}
+#pageWrapper footer {
+  margin: 158px auto 40px;
+  padding: 20px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 15px;
+  color: #ffffff;
+}
+#pageWrapper footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#pageWrapper footer ul li a {
+  color: #ebff0d;
+  text-decoration: none;
+  padding-left: 3px;
+  padding-right: 3px;
+  -moz-transition: ease-out 250ms;
+  -o-transition: ease-out 250ms;
+  -webkit-transition: ease-out 250ms;
+  transition: ease-out 250ms;
+}
+#pageWrapper footer ul li a:hover {
+  color: #000;
+  background: #ebff0d;
+  text-decoration: none;
+  -moz-transition: ease-out 400ms;
+  -o-transition: ease-out 400ms;
+  -webkit-transition: ease-out 400ms;
+  transition: ease-out 400ms;
+}
+#pageBgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+#modalWrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1007px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  background: #fff;
+}
+#modalWrapper header {
+  position: fixed;
+  top: 0;
+  width: 987px;
+  height: 101px;
+  padding: 30px 0 5px;
+  background: #ffffff;
+  z-index: 10;
+}
+#modalWrapper header h1 a {
+  display: block;
+  width: 224px;
+  height: 76px;
+  text-indent: -9999em;
+  background: url(../media/FPU-logo-bw.png) center center no-repeat;
+}
+#modalWrapper header .buttons {
+  position: absolute;
+  right: 180px;
+  top: 42px;
+}
+#modalWrapper header .buttons .close {
+  padding: 7px 15px;
+  background: #ebff0d;
+  color: #000;
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: 700;
+  display: none;
+}
+#modalWrapper header .buttons .print {
+  padding: 7px 15px;
+  background: #ff9c0d;
+  color: #000;
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: 700;
+}
+#modalWrapper article {
+  color: #000;
+  line-height: 130%;
+  padding: 140px 0 60px 0;
+}
+#modalWrapper article h2 {
+  font-size: 33px;
+  margin: 2em 0 1em;
+  font-weight: 700;
+  line-height: 40px;
+}
+#modalWrapper article h3 {
+  font-size: 20px;
+  margin: 2em 0 0.75em;
+  font-weight: 700;
+}
+#modalWrapper article h3 strong {
+  font-size: 26px;
+}
+#modalWrapper article h3[id] {
+  padding-top: 150px;
+  margin-top: -120px;
+}
+#modalWrapper article h4 {
+  font-size: 18px;
+  margin: 2em 0 0.75em;
+  font-weight: 700;
+}
+#modalWrapper article .under {
+  text-decoration: underline;
+  margin: 2em 0 0;
+}
+#modalWrapper article img.header {
+  margin-bottom: 20px;
+}
+#modalWrapper article img.header.left {
+  float: left;
+  margin-right: 30px;
+}
+#modalWrapper article img.header.right {
+  float: right;
+  margin-left: 30px;
+}
+#modalWrapper article strong {
+  font-weight: 700;
+}
+#modalWrapper article em {
+  font-style: italic;
+}
+#modalWrapper article address {
+  margin-left: 40px;
+}
+#modalWrapper article p {
+  margin-bottom: 1em;
+}
+#modalWrapper article p img {
+  display: block;
+  margin: 30px 0;
+}
+#modalWrapper article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 3em;
+}
+#modalWrapper article table caption {
+  font-size: 18px;
+  margin: 0 0 0.75em;
+  font-weight: 700;
+  text-align: left;
+}
+#modalWrapper article table tr:nth-child(odd) {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#modalWrapper article table tr:nth-child(odd) td {
+  background-color: #f2f2f2;
+  padding: 0.5em 0.1em;
+  width: 50%;
+}
+#modalWrapper article table tr:nth-child(even) {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#modalWrapper article table tr:nth-child(even) td {
+  background-color: #ffffff;
+  padding: 0.5em 0.1em;
+  width: 50%;
+}
+#modalWrapper article table ul {
+  margin: 0;
+}
+#modalWrapper article table ul li {
+  list-style-type: none;
+  font-size: 16px;
+  margin-bottom: 0.15em;
+}
+#modalWrapper article ul {
+  margin: 0 0 1em 1em;
+}
+#modalWrapper article ul.floatfix {
+  margin: 0 0 0.5em 23em;
+}
+#modalWrapper article ul li {
+  margin: 0 0 0.5em 1em;
+  list-style-type: disc;
+}
+#modalWrapper article ul li h4 {
+  margin: 0 0 0.5em;
+}
+#modalWrapper article ul li strong {
+  font-weight: 500;
+}
+#modalWrapper article ul li li {
+  list-style-type: circle;
+}
+#modalWrapper article ul.checklist {
+  margin: 3em 0 0 0;
+}
+#modalWrapper article ul.checklist > li {
+  position: relative;
+  list-style-type: none;
+  margin: 0 0 1em 40px;
+}
+#modalWrapper article ul.checklist > li::before {
+  content: url(../media/checkbox.gif);
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 1px;
+  left: -40px;
+}
+#modalWrapper article ul.checklist > li ul {
+  margin-top: 1em;
+}
+#modalWrapper article ul.checklist > li ul li {
+  list-style-type: none;
+  list-style-image: url(../media/checkbox-circle.gif);
+}
+#modalWrapper article ul.columns {
+  margin: 2em 0;
+}
+#modalWrapper article ul.columns li {
+  list-style-type: none;
+  float: left;
+  width: 48.5%;
+  margin-left: 1%;
+  margin-bottom: 2em;
+}
+#modalWrapper article ul.columns::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#modalWrapper article dl dt {
+  font-weight: 700;
+}
+#modalWrapper article dl dt strong {
+  float: left;
+  width: 9em;
+  margin-right: 1em;
+}
+#modalWrapper article dl dd {
+  margin-bottom: 2em;
+}
+#modalWrapper article a {
+  padding: 1px 2px;
+  color: #000;
+  background: #ebff0d;
+  text-decoration: none;
+  -moz-transition: all ease-in 250ms;
+  -o-transition: all ease-in 250ms;
+  -webkit-transition: all ease-in 250ms;
+  transition: all ease-in 250ms;
+}
+#modalWrapper article a:hover {
+  -moz-transition: all ease-out 400ms;
+  -o-transition: all ease-out 400ms;
+  -webkit-transition: all ease-out 400ms;
+  transition: all ease-out 400ms;
+  color: #ebff0d;
+  background: #000;
+}
+#modalWrapper article .big {
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: 500;
+}
+#modalWrapper article .nextSectionLink {
+  margin: 40px 0;
+}
+#modalWrapper article .nextSectionLink a {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 5px;
+}
+#message {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ImageLinks { background:none !important;}
+/*# sourceMappingURL=styles.css.map */
