@@ -1,173 +1,181 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Florida Polytechnic University</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Computer Club</title>
 
-	<link rel="shortcut icon" href="support/media/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="support/media/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="support/media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="support/media/favicon.ico" type="image/x-icon">
 
-	<link href="support/css/fonts.css" rel="stylesheet" />
-	<link href="support/css/reset.css" rel="stylesheet" />
-	<link href="support/css/styles.css" rel="stylesheet" />
-	<link href="support/css/colorbox.css" rel="stylesheet" />
-	<link href="support/css/print.css" rel="stylesheet" media="print" />
+    <link href="support/css/fonts.css" rel="stylesheet" />
+    <link href="support/css/reset.css" rel="stylesheet" />
+    <link href="support/css/styles.css" rel="stylesheet" />
+    <link href="support/css/colorbox.css" rel="stylesheet" />
+    <link href="support/css/print.css" rel="stylesheet" media="print" />
 
-	<script src="support/scripts/jquery-2.1.1.min.js"></script>
-	<script src="support/scripts/jquery.colorbox-min.js"></script>
+    <script src="support/scripts/jquery-2.1.1.min.js"></script>
+    <script src="support/scripts/jquery.colorbox-min.js"></script>
 
-	<script>
-		jQuery(function () {
-			jQuery('.lnkBtn:not(.message) > a').colorbox({
-				transition: 'fade',
-				innerWidth: '100%',
-				innerHeight: '100%',
-				top: '0',
-				fixed: true,
-				iframe: true,
-				overlayClose: false,
-				closeButton: true,
-				close: 'close [x]'
-			});
+    <script>
+        jQuery(function() {
+            jQuery('.lnkBtn:not(.message) > a').colorbox({
+                transition: 'fade',
+                innerWidth: '100%',
+                innerHeight: '100%',
+                top: '0',
+                fixed: true,
+                iframe: true,
+                overlayClose: false,
+                closeButton: true,
+                close: 'close [x]'
+            });
 
-			jQuery('.lnkBtn.message > a').on('click', function (e) {
-				e.preventDefault();
+            jQuery('.lnkBtn.message > a').on('click', function(e) {
+                e.preventDefault();
 
-				jQuery.colorbox({
-					transition: 'fade',
-					innerWidth: '100%',
-					innerHeight: '100%',
-					top: '0',
-					fixed: true,
-					inline: true,
-					href: '#message',
-					overlayClose: false,
-					closeButton: true,
-					close: '[x]',
-				});
+                jQuery.colorbox({
+                    transition: 'fade',
+                    innerWidth: '100%',
+                    innerHeight: '100%',
+                    top: '0',
+                    fixed: true,
+                    inline: true,
+                    href: '#message',
+                    overlayClose: false,
+                    closeButton: true,
+                    close: '[x]',
+                });
 
-				jQuery('#message')[0].play();
-			});
+                jQuery('#message')[0].play();
+            });
 
-			jQuery(document).on('cbox_complete', function () {
-				//jQuery('#pageWrapper').css('overflow', 'hidden').css('height', '0px');
-				jQuery('#pageWrapper').hide();
-				jQuery('#pageBgVideo').hide();
-			});
+            jQuery(document).on('cbox_complete', function() {
+                //jQuery('#pageWrapper').css('overflow', 'hidden').css('height', '0px');
+                jQuery('#pageWrapper').hide();
+                jQuery('#pageBgVideo').hide();
+            });
 
-			jQuery(document).on('cbox_closed', function () {
-				//jQuery('#pageWrapper').css('overflow', 'auto').css('height', 'auto');
-				jQuery('#pageWrapper').show();
-				jQuery('#pageBgVideo').show();
+            jQuery(document).on('cbox_closed', function() {
+                //jQuery('#pageWrapper').css('overflow', 'auto').css('height', 'auto');
+                jQuery('#pageWrapper').show();
+                jQuery('#pageBgVideo').show();
 
-				jQuery('#message')[0].pause();
-				jQuery('#message')[0].currentTime = 0;
-			});
-		});
-	</script>
+                jQuery('#message')[0].pause();
+                jQuery('#message')[0].currentTime = 0;
+            });
+        });
+    </script>
 </head>
+
 <body>
-	<div id="pageWrapper">
-		<header>
-			<h1>
-				<a href="http://floridapolytechnic.org/" target="_blank">Florida Polytechnic University</a>
-			</h1>
-		</header>
+    <div id="pageWrapper">
+        <header>
+            <h1>
+                <p>
+                    <center>
+                        <font size="300">Computer Club</font>
+                    </center>
+                </P>
+            </h1>
+        </header>
 
-		<article>
-			<h2 class="transBg">
-				<strong>Congratulations.</strong>
-				<span>You're the next.</span>
-			</h2>
+        <article>
+            <h2 class="transBg">
+                <strong>Welcome</strong>
+                <span>To Computer Club</span>
+            </h2>
 
-			<ul class="col2 main">
-				<li class="lnkBtn transBg orange message"><a href="#message">A Message From <br />the President</a></li>
-				<li class="lnkBtn transBg yellow welcome"><a href="support/welcome.html">Welcome</a></li>
-				<li class="lnkBtn transBg purple enrollment"><a href="support/enrollment.html">Enrollment</a></li>
-				<li class="lnkBtn transBg purple billing"><a href="support/billing.html">Tuition &amp; Fees</a></li>
-			</ul>
+            <ul class="col2 main">
+                <!--<li class="lnkBtn transBg orange message"><a href="support/welcome.html">Photos of <br />the Club</a></li>-->
+                <li class="lnkBtn transBg yellow welcome"><a href="support/welcome.html">Welcome and Photos</a></li>
+                <!--<li class="lnkBtn transBg purple enrollment"><a href="support/enrollment.html">Enrollment</a></li>
+                <li class="lnkBtn transBg purple billing"><a href="support/billing.html">Tuition &amp; Fees</a></li>-->
+            </ul>
 
-			<h3 class="transBg teal">Important Dates</h3>
-			<ul class="col1 dates">
-				<li class="lnkBtn transBg teal"><a href="support/dates.html">Move-in Day<span>January 4, 2017</span></a></li>
-				<li class="lnkBtn transBg teal"><a href="support/dates.html">Spring Orientation (Dinner Session)<span>January 4, 2017</span></a></li>
+            <!--<h3 class="transBg teal">Important Dates</h3>
+            <ul class="col1 dates">
+                <li class="lnkBtn transBg teal"><a href="support/dates.html">Move-in Day<span>January 4, 2017</span></a></li>
+                <li class="lnkBtn transBg teal"><a href="support/dates.html">Spring Orientation (Dinner Session)<span>January 4, 2017</span></a></li>
                 <li class="lnkBtn transBg teal"><a href="support/dates.html">First Day of Classes<span>January 5, 2017</span></a></li>
                 <li class="lnkBtn transBg teal"><a href="support/dates.html">New Student Move-in Day<span>August 15 & 16, 2017</span></a></li>
                 <li class="lnkBtn transBg teal"><a href="support/dates.html">Commuter Student Check-in<span>August 17, 2017 </span></a></li>
                 <li class="lnkBtn transBg teal"><a href="support/dates.html">Welcome Days<span>August 17-19, 2017</span></a></li>
                 <li class="lnkBtn transBg teal"><a href="support/dates.html">First Day of Classes<span>August 21, 2017 </span></a></li>
                 <li class="lnkBtn transBg teal"><a href="support/dates.html">Purple Fire Week<span>August 21-25, 2017</span></a></li>
-			</ul>
+            </ul>
 
-			<h3 class="transBg green">Academics</h3>
-			<ul class="col1 academics">
-				<li class="lnkBtn transBg green middle"><a href="support/programs.html">Degree Programs</a></li>
-			</ul>
+            <h3 class="transBg green">Academics</h3>
+            <ul class="col1 academics">
+                <li class="lnkBtn transBg green middle"><a href="support/programs.html">Degree Programs</a></li>
+            </ul>
 
-			<h3 class="transBg yellow">Campus Life</h3>
-			<div class="transBg campusLifeDesc">
-				<h4>Be ready for WHAT’S NEXT</h4>
+            <h3 class="transBg yellow">Campus Life</h3>
+            <div class="transBg campusLifeDesc">
+                <h4>Be ready for WHAT’S NEXT</h4>
 
-				<p><strong>Live and learn on the cutting edge!</strong></p>
-				<p>At Florida Polytechnic University, you’ll be part of a close-knit community of students, faculty and staff who together are shaping the campus experience in unique ways.</p>
-				<p>We’re building a rich, interactive culture where innovation and learning extend beyond the classroom and infuse campus life itself. From gaming and sports to student clubs and government, the possibilities are as endless as your imagination. This is your chance to make your mark.</p>
-			</div>
-			<ul class="col2 campusLife">
-				<li class="lnkBtn transBg yellow"><a href="support/residencehall.html">Residence Hall Information</a></li>
-				<li class="lnkBtn transBg yellow"><a href="support/health.html">Student Health Services</a></li>
-				<li class="lnkBtn transBg yellow"><a href="support/dining.html">Dining Facilities</a></li>
-				<li class="lnkBtn transBg yellow"><a href="support/parking.html">Parking &amp; Transportation</a></li>
-			</ul>
+                <p><strong>Live and learn on the cutting edge!</strong></p>
+                <p>At Florida Polytechnic University, you’ll be part of a close-knit community of students, faculty and staff who together are shaping the campus experience in unique ways.</p>
+                <p>We’re building a rich, interactive culture where innovation and learning extend beyond the classroom and infuse campus life itself. From gaming and sports to student clubs and government, the possibilities are as endless as your imagination.
+                    This is your chance to make your mark.</p>
+            </div>
+            <ul class="col2 campusLife">
+                <li class="lnkBtn transBg yellow"><a href="support/residencehall.html">Residence Hall Information</a></li>
+                <li class="lnkBtn transBg yellow"><a href="support/health.html">Student Health Services</a></li>
+                <li class="lnkBtn transBg yellow"><a href="support/dining.html">Dining Facilities</a></li>
+                <li class="lnkBtn transBg yellow"><a href="support/parking.html">Parking &amp; Transportation</a></li>
+            </ul>
 
-			<ul class="col1 visitInfo">
-				<li class="lnkBtn transBg orange middle"><a href="support/visit.html">Campus Visit Information</a></li>
-			</ul>
+            <ul class="col1 visitInfo">
+                <li class="lnkBtn transBg orange middle"><a href="support/visit.html">Campus Visit Information</a></li>
+            </ul>
 
-			<ul class="col1 career">
-				<li class="lnkBtn transBg teal middle"><a href="support/career.html">Career Development</a></li>
-			</ul>
+            <ul class="col1 career">
+                <li class="lnkBtn transBg teal middle"><a href="support/career.html">Career Development</a></li>
+            </ul>
 
-			<h3 class="transBg green">Directories</h3>
-			<ul class="col2 directories">
-				<li class="lnkBtn transBg green"><a href="support/directories.html#StudentAffairs">Student Affairs</a></li>
-				<li class="lnkBtn transBg green"><a href="support/directories.html#FinancialAid">Financial Aid</a></li>
-				<li class="lnkBtn transBg green"><a href="support/directories.html#Registrar">Registrar</a></li>
-				<li class="lnkBtn transBg green"><a href="support/directories.html#AcademicAdvisement">Academic Advisement</a></li>
-				<li class="lnkBtn transBg green"><a href="support/directories.html#Bursar">Bursar</a></li>
-				<li class="lnkBtn transBg green"><a href="support/directories.html#Housing">Housing</a></li>
-				<li class="lnkBtn transBg green middle clear"><a href="support/directories.html#Admissions">Admissions</a></li>
-			</ul>
+            <h3 class="transBg green">Directories</h3>
+            <ul class="col2 directories">
+                <li class="lnkBtn transBg green"><a href="support/directories.html#StudentAffairs">Student Affairs</a></li>
+                <li class="lnkBtn transBg green"><a href="support/directories.html#FinancialAid">Financial Aid</a></li>
+                <li class="lnkBtn transBg green"><a href="support/directories.html#Registrar">Registrar</a></li>
+                <li class="lnkBtn transBg green"><a href="support/directories.html#AcademicAdvisement">Academic Advisement</a></li>
+                <li class="lnkBtn transBg green"><a href="support/directories.html#Bursar">Bursar</a></li>
+                <li class="lnkBtn transBg green"><a href="support/directories.html#Housing">Housing</a></li>
+                <li class="lnkBtn transBg green middle clear"><a href="support/directories.html#Admissions">Admissions</a></li>
+            </ul>
 
-			<ul class="col1 checklist">
-				<li class="lnkBtn transBg white middle"><a href="support/checklist.html">Checklist of Things To Do Before Getting On Campus</a></li>
-			</ul>
-		</article>
+            <ul class="col1 checklist">
+                <li class="lnkBtn transBg white middle"><a href="support/checklist.html">Checklist of Things To Do Before Getting On Campus</a></li>
+            </ul>
+        </article>
 
-		<footer class="transBg">
-			<p>4700 Research Way, Lakeland, FL 33805-8531</p>
-			<p>863-583-9050</p>
-			<ul>
-				<li><a href="https://floridapolytechnic.org/privacy-policy/" target="_blank">Privacy Policy</a></li>
-				<li><a href="https://floridapolytechnic.org/directions-to-florida-polytechnic-campus/" target="_blank">Directions to Campus</a></li>
-				<li><a href="https://floridapolytechnic.org/board-of-trustees/university-policies-and-regulations/" target="_blank">Policies and Regulations</a></li>
-				<li><a href="https://floridapolytechnic.org/board-of-trustees/university-rules/" target="_blank">University Rules</a></li>
-			</ul>
-		</footer>
-	</div>
+        <footer class="transBg">
+            <p>4700 Research Way, Lakeland, FL 33805-8531</p>
+            <p>863-583-9050</p>
+            <ul>
+                <li><a href="https://floridapolytechnic.org/privacy-policy/" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://floridapolytechnic.org/directions-to-florida-polytechnic-campus/" target="_blank">Directions to Campus</a></li>
+                <li><a href="https://floridapolytechnic.org/board-of-trustees/university-policies-and-regulations/" target="_blank">Policies and Regulations</a></li>
+                <li><a href="https://floridapolytechnic.org/board-of-trustees/university-rules/" target="_blank">University Rules</a></li>
+            </ul>
+        </footer>
+    </div>-->
 
-	<video id="pageBgVideo" poster="support/media/bg-vid.jpg" loop autoplay>
+            <video id="pageBgVideo" poster="support/media/bg-vid.jpg" loop autoplay>
 		<source src="support/media/bg-vid.ogv" type='video/ogg; codecs="theora, vorbis"'>
 		<source src="support/media/bg-vid.webm" type='video/webm; codecs="vp8.0, vorbis"'>
 		<source src="support/media/bg-vid.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
 	</video>
 
-	<div style="display:none">
-		<video id="message" poster="support/media/WelcomeFLPOLY.jpg" controls>
+            <div style="display:none">
+                <video id="message" poster="support/media/WelcomeFLPOLY.jpg" controls>
 			<source src="support/media/WelcomeFLPOLY.ogv" type='video/ogg; codecs="theora, vorbis"'>
 			<source src="support/media/WelcomeFLPOLY.webm" type='video/webm; codecs="vp8.0, vorbis"'>
 			<source src="support/media/WelcomeFLPOLY.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
 			<p>Sorry, your browser is not capable of playing this Video file.</p>
 		</video>
-	</div>
+            </div>
 </body>
+
 </html>
